@@ -1,0 +1,25 @@
+[project]
+name = "es-ew"
+version = "0.1.0"
+description = "ES-EW: Electronic Support / Electronic Warfare Orchestrator"
+authors = [
+    {name = "smadi", email = "smadixd@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "pyserial (>=3.5,<4.0)",
+    "pymavlink (>=2.4.49,<3.0.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "numpy (>=2.4.6,<3.0.0)",
+    "scipy (>=1.17.1,<2.0.0)",
+    "matplotlib (>=3.10.9,<4.0.0)"
+]
+
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
